@@ -5,6 +5,7 @@ import uuid
 from PIL import Image
 import numpy as np
 import openpyxl
+from openpyxl.utils.cell import get_column_letter
 import streamlit as st
 
 
@@ -48,6 +49,9 @@ def transform_image_to_xlsx(image_path: str, default_cols: int = 50, is_rescale=
 
         # Fill worksheet cells with appropriate color
         for x in range(0, width):
+            column_letter = get_column_letter(x + 1)
+            worksheet.column_dimensions[column_letter].width = 3
+        
             for y in range(0, height):
                 fill_color = fill_colors[x * height + y]
                 cell = worksheet.cell(row=x + 1, column=y + 1)
