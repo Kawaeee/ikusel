@@ -1,4 +1,5 @@
 # ikusel (📷💻📊)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kawaeee-ikusel-main-2eujpn.streamlit.app/)
 
 Simple web-based tool that lets users upload an image and convert it to an Excel spreadsheet (.xlsx) file!
 

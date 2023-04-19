@@ -67,6 +67,7 @@ def transform_image_to_xlsx(image_path: str, default_cols: int = 50, is_rescale=
 
 if __name__ == "__main__":
     st.title("ikusel (📷💻📊)")
+    st.markdown("[![GitHub Star](https://img.shields.io/github/stars/Kawaeee/ikusel)](https://github.com/Kawaeee/ikusel)")
     st.write("Simple web-based tool that lets users upload an image and convert it to an Excel spreadsheet (.xlsx) file!")
 
     uploaded_file = st.file_uploader(label="Upload Image..", type=["png", "jpg", "jpeg"], label_visibility="hidden")
